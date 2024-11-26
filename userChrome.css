@@ -1,3 +1,4 @@
+
 /* square corners for context menu */
 .tab-background,
 #urlbar-background,
@@ -5,3 +6,42 @@
 menupopup,
 .menupopup-arrowscrollbox{ border-radius: 0 !important; }
 :root{--arrowpanel-border-radius:0px !important;}
+
+
+#urlbar-background{
+        background-color: white !important;
+    }
+
+#searchbar{
+        background-color: white !important;
+    }
+
+#navigator-toolbox{ --toolbar-bgcolor: #F5F5F5; }    
+
+
+.tab-background{
+border-radius: 0px 0px !important;
+margin-bottom: 0px !important;
+background-color: lightgray;
+}
+
+.tabbrowser-tab{
+    background-color: lightgray;
+}
+
+.tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background{
+background-color: F5F5F5;
+}
+
+menupopup > menu, menupopup > menuitem{
+padding-block: 2px !important;
+min-height: 0px !important;
+}
+:root{
+--arrowpanel-menuitem-padding: 2px !important;
+}
+
+#context-navigation,
+#context-sep-navigation {
+  display:none !important;
+}
